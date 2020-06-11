@@ -12,7 +12,7 @@
 					<ul>
 						<li id="li1"><a href="#intro">Think Global</a></li>
 						<li id="li2"><input placeholder="Search your program here" type="text" id="searchText">
-									<button id="button" type="submit" onclick="">Search</button></a></li>
+									<button id="button" type="submit" onclick="search()">Search</button></a></li>
 						<li id="li3"><a href="#Aboutus">About us</a></li>
 						<li id="li4"><a href="#programs">Our Programs</a></li>
 						<li id="li5"><a href="#ContactUs">Contact Us</a></li>
@@ -46,71 +46,71 @@
 			</div>
 			<div id="programs">			
 				<h1>Our Programs</h1>
-				<div>
-					<h2>Think Global Entreprenuer</h2>
-					<img src="images/pen.png">
-					<p>In this program, you will work in a small startup firm.
-					which will help you learn the business <span id="first_dots">...</span><span id="first_more">at the very beginning stage.
-					This will help in your career development if you want to be an Entrepreneur in 
-					near future. This program will allow building your network in the Industry.</br>
-					Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br>
-					Duration of this Internship: 4-6 months.</br>
-					Pay: $200-$400 per week.</p></span>
-					<p onclick="first_click()" id="firstRead">Read more</p>
-				</div>
-				<div>
-					<h2>Academia Internship</h2>
-					<img src="images/diploma.png">
-					<p>If you are in your final year of studies.
-					and are looking for an internship to complete your<span id="second_dots">...</span><span id="second_more"> 
-					final year report then this program is best suited for you. 
-					This will give industry experience into your chosen field of studies.
-					This program will serve the combination of 
-					work culture and professional development that will count as an experience in your future next job.</br>
-					Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br>
-					Duration of this Internship: 3 months.</br>
-					Pay: $300 per week.</p></span>
-					<p onclick="second_click()" id="secondRead">Read more</p>
-				</div>
-				<div>
-					<h2>Talent Internship</h2>
-					<img src="images/art2.jpg">
-					<p>Now you have qualifications but don't have the experience to work in the studied filed.
-					This program will allow you to be a <span id="third_dots">...</span><span id="third_more">part of the biggest firm, 
-					where you will learn the experience needed to work in the industry.
-					This is a very popular program as its mutual profit i.e. 
-					A young graduate gets the first-hand experience and the Company gets valuable insight into your country's market.
-					This will help the business to adapt to the new market quickly.</br>
-					Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br>
-					Duration of this Internship: 6 months.</br>
-					Pay: $350 per week.</p></span>
-					<p onclick="third_click()" id="thirdRead">Read more</p>
-				</div>
-				<div>
-					<h2>Project Internship</h2>
-					<img src="images/art1.jpg">
-					<p>This internship will allow you to work in real life short term project.
-					In this, you will be assisting your <span id="fourth_dots">...</span><span id="fourth_more">project manager and your team member in every way possible.
-					This is the best chance for any individual to be a part of a real-life project and apply their 
-					theoretical knowledge into practical use.
-					</br>
-					Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br>
-					Duration of this Internship: 6 months.</br>
-					Pay: $350 per week.</p></span>
-					<p onclick="fourth_click()" id="fourthRead">Read more</p>
-				</div>
-				<div>
-					<h2>Co-operative Education Internship</h2>
-					<img src="images/job.png">
-					<p>This program is a combination of classroom-based education with practical work experience.
-					This will teach you all the work in the co-operative industry and making <span id="fifth_dots">...</span><span id="fifth_more">you ready for the job.
-					The majority of people after joining this program gets the job offer letter once they finish their Internship.
-					</br>
-					Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br>
-					Duration of this Internship: 6 months.</br>
-					Pay: $350 per week.</p></span>
-					<p onclick="fifth_click()" id="fifthRead">Read more</p>
-				</div>
+				<!-- <div> -->
+					<!-- <h2>Think Global Entreprenuer</h2> -->
+					<!-- <img src="images/pen.png"> -->
+					<!-- <p>In this program, you will work in a small startup firm. -->
+					<!-- which will help you learn the business <span id="first_dots">...</span><span id="first_more">at the very beginning stage. -->
+					<!-- This will help in your career development if you want to be an Entrepreneur in  -->
+					<!-- near future. This program will allow building your network in the Industry.</br> -->
+					<!-- Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br> -->
+					<!-- Duration of this Internship: 4-6 months.</br> -->
+					<!-- Pay: $200-$400 per week.</p></span> -->
+					<!-- <p onclick="first_click()" id="firstRead">Read more</p> -->
+				<!-- </div> -->
+				<!-- <div> -->
+					<!-- <h2>Academia Internship</h2> -->
+					<!-- <img src="images/diploma.png"> -->
+					<!-- <p>If you are in your final year of studies. -->
+					<!-- and are looking for an internship to complete your<span id="second_dots">...</span><span id="second_more">  -->
+					<!-- final year report then this program is best suited for you.  -->
+					<!-- This will give industry experience into your chosen field of studies. -->
+					<!-- This program will serve the combination of  -->
+					<!-- work culture and professional development that will count as an experience in your future next job.</br> -->
+					<!-- Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br> -->
+					<!-- Duration of this Internship: 3 months.</br> -->
+					<!-- Pay: $300 per week.</p></span> -->
+					<!-- <p onclick="second_click()" id="secondRead">Read more</p> -->
+				<!-- </div> -->
+				<!-- <div> -->
+					<!-- <h2>Talent Internship</h2> -->
+					<!-- <img src="images/art2.jpg"> -->
+					<!-- <p>Now you have qualifications but don't have the experience to work in the studied filed. -->
+					<!-- This program will allow you to be a <span id="third_dots">...</span><span id="third_more">part of the biggest firm,  -->
+					<!-- where you will learn the experience needed to work in the industry. -->
+					<!-- This is a very popular program as its mutual profit i.e.  -->
+					<!-- A young graduate gets the first-hand experience and the Company gets valuable insight into your country's market. -->
+					<!-- This will help the business to adapt to the new market quickly.</br> -->
+					<!-- Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br> -->
+					<!-- Duration of this Internship: 6 months.</br> -->
+					<!-- Pay: $350 per week.</p></span> -->
+					<!-- <p onclick="third_click()" id="thirdRead">Read more</p> -->
+				<!-- </div> -->
+				<!-- <div> -->
+					<!-- <h2>Project Internship</h2> -->
+					<!-- <img src="images/art1.jpg"> -->
+					<!-- <p>This internship will allow you to work in real life short term project. -->
+					<!-- In this, you will be assisting your <span id="fourth_dots">...</span><span id="fourth_more">project manager and your team member in every way possible. -->
+					<!-- This is the best chance for any individual to be a part of a real-life project and apply their  -->
+					<!-- theoretical knowledge into practical use. -->
+					<!-- </br> -->
+					<!-- Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br> -->
+					<!-- Duration of this Internship: 6 months.</br> -->
+					<!-- Pay: $350 per week.</p></span> -->
+					<!-- <p onclick="fourth_click()" id="fourthRead">Read more</p> -->
+				<!-- </div> -->
+				<!-- <div> -->
+					<!-- <h2>Co-operative Education Internship</h2> -->
+					<!-- <img src="images/job.png"> -->
+					<!-- <p>This program is a combination of classroom-based education with practical work experience. -->
+					<!-- This will teach you all the work in the co-operative industry and making <span id="fifth_dots">...</span><span id="fifth_more">you ready for the job. -->
+					<!-- The majority of people after joining this program gets the job offer letter once they finish their Internship. -->
+					<!-- </br> -->
+					<!-- Countries: US, Canada, Australia, Singapore, China, India, Dubai.</br> -->
+					<!-- Duration of this Internship: 6 months.</br> -->
+					<!-- Pay: $350 per week.</p></span> -->
+					<!-- <p onclick="fifth_click()" id="fifthRead">Read more</p> -->
+				<!-- </div> -->
 			</div>
 			<div id="ContactUs">
 				<h1>Contact Us</h1>
